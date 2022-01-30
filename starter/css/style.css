@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 10px; }
+
+.heading-3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #c69963;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 1rem; }
+
+.text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 200; }
+
+.heading-1 {
+  font-size: 4rem; }
+
+.heading-2 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.2;
+  margin: 2rem 0; }
+
+.heading-5 {
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  margin: 1rem 0; }
+
+.btn {
+  background-color: #c69963;
+  font-family: "Josefin Sans", sans-serif;
+  color: #f9f7f6;
+  transition: 0.35s all;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin: 1rem; }
+  .btn:hover {
+    background-color: #6D5D4B; }
+
+.header {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  background-color: #101d2c;
+  color: #f9f7f6;
+  font-family: "Josefin Sans", sans-serif; }
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column; } }
+  .header .mainTitle {
+    width: 70%;
+    background: url("/img/hero.jpeg");
+    background-size: cover;
+    background-position: center; }
+    @media (max-width: 600px) {
+      .header .mainTitle {
+        width: 100%; } }
+    .header .mainTitle .wrapper {
+      background-color: rgba(16, 29, 44, 0.7);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 5rem; }
+    .header .mainTitle .logo {
+      width: 15rem;
+      align-self: center; }
+    .header .mainTitle .headerTitlesWrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%; }
+    .header .mainTitle .see-on .title {
+      color: #aaa;
+      text-align: center;
+      font-size: 1.6rem;
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-column-gap: 1.5rem;
+      align-items: center; }
+      .header .mainTitle .see-on .title::before, .header .mainTitle .see-on .title::after {
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: #aaa; }
+    .header .mainTitle .see-on .logos {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .header .mainTitle .see-on .logos img {
+        min-width: 5rem;
+        max-width: 10rem;
+        height: auto;
+        padding: 1rem; }
+  .header .realtors {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem; }
+    @media (max-width: 600px) {
+      .header .realtors {
+        width: 100%; } }
+    .header .realtors .realtor {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      margin-bottom: 1.5rem;
+      width: 28rem; }
+      .header .realtors .realtor .realtorInfo {
+        align-self: center;
+        padding: 0.5rem; }
+      .header .realtors .realtor .nameContainer {
+        font-size: 2rem; }
+      .header .realtors .realtor .descContainer {
+        text-transform: uppercase; }
+      .header .realtors .realtor .profileRealtor {
+        border-radius: 75%;
+        max-width: 80px;
+        min-height: 80px; }
+
+.features {
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .features .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    grid-gap: 10rem; }
+    @media (max-width: 600px) {
+      .features .container {
+        grid-template-columns: 1fr 1fr; } }
+    .features .container .textContainer .featuresText {
+      font-size: 1.5rem;
+      font-weight: 200; }
+
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #F9F8F4; }
+  .story .images {
+    background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url("/img/back.jpg");
+    display: grid;
+    background-size: cover;
+    background-position: center center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
+    .story .images .story-img {
+      width: 100%; }
+    .story .images .story-img1 {
+      grid-row: 2/6;
+      grid-column: 2/6; }
+    .story .images .story-img2 {
+      grid-row: 4/7;
+      grid-column: 4/7;
+      width: 120%; }
+  .story .storyContainer {
+    align-self: center;
+    padding: 10rem; }
+    .story .storyContainer .btn {
+      margin: 3rem 0; }
+    @media (max-width: 600px) {
+      .story .storyContainer .heading-2 {
+        font-size: 2.5rem; } }
+
+@media (max-width: 800px) {
+  .story {
+    grid-template-columns: 1fr; }
+  .images .story-img2 {
+    grid-row: 4/7;
+    grid-column: 4/7;
+    width: 100%; } }
+
+.homes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .homes .container {
+    padding: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10rem; }
+    @media (max-width: 1450px) {
+      .homes .container {
+        grid-template-columns: 1fr 1fr;
+        padding: 10rem 5rem; } }
+    @media (max-width: 600px) {
+      .homes .container {
+        grid-template-columns: 1fr; } }
+    .homes .container .homeContainer {
+      background-color: #F9F8F4;
+      max-width: 50rem;
+      display: grid;
+      grid-template-rows: 4fr 4fr 1fr;
+      flex-direction: column;
+      place-items: center; }
+      .homes .container .homeContainer .houseName {
+        grid-area: 1/1/3/2;
+        width: 75%;
+        color: #f9f7f6;
+        background-color: #101d2c;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align-last: center;
+        padding: 2rem; }
+      .homes .container .homeContainer .information {
+        grid-area: 2/1/3/2;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center; }
+        .homes .container .homeContainer .information .text-1, .homes .container .homeContainer .information .text-2 {
+          align-self: end; }
+      .homes .container .homeContainer img {
+        grid-area: 1/1/2/2;
+        width: 100%;
+        place-self: start; }
+      .homes .container .homeContainer .btn {
+        width: 100%;
+        height: 100%; }
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  background-color: #F9F8F4;
+  padding: 1.5rem;
+  grid-gap: 1.5rem; }
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 0.5rem; } }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: 0.2s all; }
+    .gallery img:hover {
+      opacity: 0.8; }
+  @media (min-width: 600px) {
+    .gallery .gal-1 {
+      grid-area: 1/1/3/5; }
+    .gallery .gal-2 {
+      grid-area: 1/5/4/11; }
+    .gallery .gal-3 {
+      grid-area: 1/11/3/13; }
+    .gallery .gal-4 {
+      grid-area: 1/13/3/17; }
+    .gallery .gal-5 {
+      grid-area: 3/1/6/5; }
+    .gallery .gal-6 {
+      grid-area: 4/5/6/9; }
+    .gallery .gal-7 {
+      grid-area: 4/9/5/11; }
+    .gallery .gal-8 {
+      grid-area: 3/11/5/15; }
+    .gallery .gal-9 {
+      grid-area: 3/15/6/17; }
+    .gallery .gal-10 {
+      grid-area: 6/1/8/3; }
+    .gallery .gal-11 {
+      grid-area: 6/3/8/7; }
+    .gallery .gal-12 {
+      grid-area: 6/7/8/9; }
+    .gallery .gal-13 {
+      grid-area: 5/9/8/15; }
+    .gallery .gal-14 {
+      grid-area: 6/15/8/17; } }
+  @media (max-width: 600px) {
+    .gallery .gal-1 {
+      grid-area: 1/1/3/2; }
+    .gallery .gal-14 {
+      grid-area: 3/4/5/5; } }
+
+.footer {
+  width: 100%;
+  background-color: #101d2c;
+  color: #f9f7f6;
+  display: flex;
+  flex-direction: column; }
+  .footer .categories {
+    padding: 10rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif; }
+    @media (max-width: 600px) {
+      .footer .categories {
+        flex-direction: column; } }
+    .footer .categories div:hover {
+      cursor: pointer;
+      opacity: 0.8; }
+    @media (max-width: 600px) {
+      .footer .categories div {
+        margin: 1rem; } }
+  .footer .copyright {
+    align-self: center;
+    color: #aaa;
+    font-size: 1.2rem;
+    padding: 5rem; }

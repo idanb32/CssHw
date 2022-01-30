@@ -1,0 +1,115 @@
+.header{
+display: flex;
+height: 80vh;
+width: 100%;  
+background-color: $color-secondary;
+color: $color-grey-light-1;
+font-family: $font-display;
+
+@media (max-width: $bp-small) {
+    flex-direction: column;    
+
+}
+
+
+
+    .mainTitle{
+        @media (max-width: $bp-small) {
+            width: 100%; 
+            }
+        width: 70%;
+        background:url("/img/hero.jpeg") ;
+        background-size: cover;
+        background-position: center;
+        .wrapper{
+            background-color: rgba(16,29,44,0.7);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 5rem;
+        }
+        .logo{
+            width: 15rem;
+            align-self: center;
+        }
+
+        .headerTitlesWrapper{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+
+        }
+        .see-on{
+           .title{
+               color: $color-grey-light-2;
+               text-align: center;
+               font-size: 1.6rem;
+               display: grid;
+               grid-template-columns: 1fr max-content 1fr;
+               grid-column-gap: 1.5rem;
+               align-items: center;
+               &::before,
+               &::after{
+                   content: "";
+                   height: 1px;
+                   display: block;
+                   background-color: $color-grey-light-2;
+               }
+           }
+            .logos{
+                img{
+                    min-width: 5rem;
+                    max-width: 10rem;
+                    height: auto;
+                    padding: 1rem;
+                }
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+        
+    }
+
+    .realtors{
+       
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        
+        @media (max-width: $bp-small) {
+            width: 100%; 
+            }
+        .realtor{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            margin-bottom: 1.5rem;
+            width: 28rem;
+            .realtorInfo{
+                align-self: center;
+                padding: 0.5rem;
+            }
+
+            .nameContainer{
+              font-size: 2rem;
+            }
+
+            .descContainer{
+                text-transform: uppercase;
+            }
+
+            .profileRealtor{
+                border-radius: 75%;
+                max-width: 80px;
+                min-height: 80px;
+            }
+        }
+    }
+
+}
+
